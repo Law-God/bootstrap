@@ -8,7 +8,7 @@
 		<script type="text/javascript" src="js/bootstrap.min.js" ></script>
 	</head>
 	<body>
-		<nav class="nav navbar-default" role="navigation">
+		<nav class="nav navbar-default navbar-fixed-top" role="navigation">
 			<div class="container-fluid">
 				<div class="navbar-header">
 					<button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -24,7 +24,16 @@
 					<ul class="nav navbar-nav">
 						<li><a>首页</a></li>
 						<li><a>经文</a></li>
-						<li><a>文章</a></li>
+						<li class="dropdown">
+							<a class="dropdown-toggle" data-toggle="dropdown">文章</a>
+							<ul class="dropdown-menu">
+								<li><a>文章1</a></li>
+								<li class="divider"></li>
+								<li><a>文章2</a></li>
+								<li class="divider"></li>
+								<li><a>文章3</a></li>
+							</ul>
+						</li>
 					</ul>
 					<div class="navbar-form navbar-right">
 						<a href="#" class="navbar-link">注册</a>
@@ -35,8 +44,9 @@
 				</div>
 			</div>
 		</nav>
+		<div style="height: 50px;"></div>
 		<div class="container">
-			<h1 class="page-header">用户登陆</h1>
+			<h1 class="page-header"><span class="glyphicon glyphicon-user"></span> 用户登陆</h1>
 			<form class="form-horizontal">
 				<div class="form-group">
 					<div class="col-md-5">
@@ -55,6 +65,77 @@
 				</div>
 			</form>
 		</div>
+		
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6">
+					<ul class="nav nav-tabs">
+						<li class="active"><a href="#wz1" data-toggle="tab">文章1</a></li>
+						<li><a href="#wz2" data-toggle="tab">文章2</a></li>
+					</ul>
+					<div class="tab-content">
+						<div class="tab-pane fade in active" id="wz1">
+							<p><a href="#">文章1内容</a> <span class="pull-right">2015-03-01</span> </p>
+							<p><a href="#">文章1内容</a> <span class="pull-right">2015-03-01</span> </p>
+							<p><a href="#">文章1内容</a> <span class="pull-right">2015-03-01</span> </p>
+						</div>
+						<div class="tab-pane fade" id="wz2">
+							<p><a href="#">文章2内容</a> <span class="pull-right">2015-03-01</span> </p>
+							<p><a href="#">文章2内容</a> <span class="pull-right">2015-03-01</span> </p>
+							<p><a href="#">文章2内容</a> <span class="pull-right">2015-03-01</span> </p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+					<ul class="breadcrumb">
+						<li ><a class="text-muted">素还真</a></li>
+						<li><a>素还真</a></li>
+					</ul>
+				</div>
+				<div class="col-md-4">
+					<div class="thumbnail">
+						<img src="img/shz.jpg" />
+						<div class="caption">
+							<h3>素还真</h3>
+							<p>半神半圣亦半仙  全儒全道是全贤  脑中真书藏万卷  掌握文武半边天</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="thumbnail">
+						<img src="img/shz.jpg" />
+						<div class="caption">
+							<h3>素还真</h3>
+							<p>半神半圣亦半仙  全儒全道是全贤  脑中真书藏万卷  掌握文武半边天</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="col-md-6">
+						<div class="thumbnail">
+							<img src="img/shz.jpg" />
+							<div class="caption">
+								<h3>素还真</h3>
+								<p>半神半圣亦半仙  全儒全道是全贤  脑中真书藏万卷  掌握文武半边天</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="thumbnail">
+							<img src="img/shz.jpg" />
+							<div class="caption">
+								<h3>素还真</h3>
+								<p>半神半圣亦半仙  全儒全道是全贤  脑中真书藏万卷  掌握文武半边天</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+		
 		<div style="height:1500px"></div>
 	</body>
 </html>
